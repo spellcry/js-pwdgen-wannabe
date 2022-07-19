@@ -1,8 +1,8 @@
 // chiedo nome cognome e colore all'utente
 const utente = {
-    nome,
-    cognome,
-    colore,
+    nome: "",
+    cognome: "",
+    colore: "",
     setNome(nome){
         this.nome = nome.toLowerCase();
     },
@@ -17,7 +17,7 @@ const utente = {
         const min = Math.ceil(0);
         const max = Math.floor(100);
         const numRandom = Math.floor(Math.random() * (max - min) + min);
-        return `${nome+cognome+colore-numRandom}`;
+        return `${this.nome+this.cognome+this.colore+numRandom}`;
     }
 }
 utente.setNome(prompt("Qual è il tuo nome?"));
