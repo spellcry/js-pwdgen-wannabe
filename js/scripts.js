@@ -7,8 +7,8 @@ let colore = prompt("Qual è il tuo colore preferito?");
 colore = colore.toLowerCase();
 
 // genero un numero casuale tra 0 e 100
-const min = ceil(0);
-const max = floor(100);
+const min = Math.ceil(0);
+const max = Math.floor(100);
 const numRandom = Math.floor(Math.random() * (max - min) + min);
 
 document.getElementById("result").innerHTML = `${nome+cognome+colore+numRandom}`;
