@@ -14,8 +14,8 @@ const utente = {
     },
     getPassword() {
         // genero un numero casuale tra 0 e 100 (escluso)
-        const min = 0;
-        const max = 100;
+        const min = ceil(0);
+        const max = floor(100);
         const numRandom = Math.floor(Math.random() * (max - min) + min);
         return `${nome+cognome+colore-numRandom}`;
     }
