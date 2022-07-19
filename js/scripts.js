@@ -11,5 +11,4 @@ const min = 0;
 const max = 100;
 const numRandom = Math.floor(Math.random() * (max - min) + min);
 
-console.log(nome+cognome+colore+numRandom);
 document.getElementById("result").innerHTML = `${nome+cognome+colore+numRandom}`;
